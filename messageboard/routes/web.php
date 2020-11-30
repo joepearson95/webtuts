@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\AccountController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,7 @@ use App\Http\Controllers\MessageController;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/account', [AccountController::class, 'index']);
 
 // Below is from the tutorial
 // Route::post('/create', [MessageController::class, 'create']);

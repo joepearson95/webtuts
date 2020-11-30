@@ -9,7 +9,7 @@
                 <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
                 <div class="carousel-inner" role="listbox">
                     <!-- Slide 1 -->
-                    <div class="carousel-item active" style="background: url(assets/img/slide/slide-1.jpg);">
+                    <div class="carousel-item active">
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2 class="animate__animated animate__fadeInDown">Coffee <span>Aroma</span></h2>
@@ -21,7 +21,7 @@
                     </div>
                     </div>
                     <!-- Slide 2 -->
-                    <div class="carousel-item" style="background: url(assets/img/slide/slide-2.jpg);">
+                    <div class="carousel-item">
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2 class="animate__animated animate__fadeInDown">Coming Soon!</h2>
