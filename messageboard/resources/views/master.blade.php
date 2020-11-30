@@ -49,9 +49,9 @@
                   <li><a href="#about">About</a></li>
                   <li><a href="#menu">Menu</a></li>
                   <li><a href="#events">Events</a></li>
-                  <li><a href="#gallery">Gallery</a></li>
-                  <li><a href="#contact">Contact</a></li>
                   <li><a href="#check-table">Check Tables</a></li>
+                  <li><a href="#gallery">Gallery</a></li>
+                  <li><a href="#contact">Contact</a></li>                  
                   <li class="check-table text-center"><a href="/account">Account</a></li>
                </ul>
             </nav>

@@ -12,11 +12,10 @@
                     <div class="carousel-item active" style="background: url(assets/img/slide/slide-1.jpg);">
                     <div class="carousel-container">
                         <div class="carousel-content">
-                            <h2 class="animate__animated animate__fadeInDown"><span>Delicious</span> Restaurant</h2>
-                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                            <h2 class="animate__animated animate__fadeInDown">Coffee <span>Aroma</span></h2>
                             <div>
                                 <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                                <a href="#check-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
+                                <a href="#check-table" class="btn-book animate__animated animate__fadeInUp scrollto">Find a table</a>
                             </div>
                         </div>
                     </div>
@@ -25,25 +24,10 @@
                     <div class="carousel-item" style="background: url(assets/img/slide/slide-2.jpg);">
                     <div class="carousel-container">
                         <div class="carousel-content">
-                            <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                            <h2 class="animate__animated animate__fadeInDown">Coming Soon!</h2>
                             <div>
                                 <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                                <a href="#check-table" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Table</a>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="carousel-item" style="background: url(assets/img/slide/slide-3.jpg);">
-                    <div class="carousel-background"><img src="assets/img/slide/slide-3.jpg" alt=""></div>
-                    <div class="carousel-container">
-                        <div class="carousel-content">
-                            <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                            <div>
-                                <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
-                                <a href="#check-table" class="btn-book animate__animated animate__fadeInUp scrollto">Check Table</a>
+                                <a href="#check-table" class="btn-book animate__animated animate__fadeInUp scrollto">Find a Table</a>
                             </div>
                         </div>
                     </div>
@@ -111,88 +95,355 @@
     <div class="container">
         <div class="section-title">
             <h2>Check our tasty <span>Menu</span></h2>
+            <p>Also available with Duchy Organic Unhomogenised milk OR Lactose Free Milk OR Soya</p>
         </div>
         <div class="row">
             <div class="col-lg-12 d-flex justify-content-center">
                 <ul id="menu-flters">
                 <li data-filter="*" class="filter-active">Show All</li>
-                <li data-filter=".filter-starters">Starters</li>
-                <li data-filter=".filter-salads">Salads</li>
-                <li data-filter=".filter-specialty">Specialty</li>
+                <li data-filter=".filter-coffee">Coffee Based</li>
+                <li data-filter=".filter-hc">Hot Chocolate</li>
+                <li data-filter=".filter-tea">Tea Based</li>
+                <li data-filter=".filter-cake">Cake & Muffins</li>
+                <li data-filter=".filter-pastries">Pastries / Breakfast</li>
+                <li data-filter=".filter-sandwich">Sandwich / Toasties</li>
+                <li data-filter=".filter-snacks">Snacks</li>
+                <li data-filter=".filter-soft">Soft Drinks</li>
+                <li data-filter=".filter-beer">Beer / Ale / Cider</li>
+                <li data-filter=".filter-spirits">Spirits</li>
+                <li data-filter=".filter-wine">Wine</li>
+                <li data-filter=".filter-cocktails">Aroma Cocktails</li>
                 </ul>
             </div>
         </div>
         <div class="row menu-container">
-            <div class="col-lg-6 menu-item filter-starters">
+            <div class="col-lg-6 menu-item filter-coffee">
                 <div class="menu-content">
-                <a href="#">Lobster Bisque</a><span>$5.95</span>
+                <a href="#menu">Double Espresso</a><span>$</span>
                 </div>
                 <div class="menu-ingredients">
-                Lorem, deren, trataro, filede, nerada
+                60ml served with sparkling water
                 </div>
             </div>
-            <div class="col-lg-6 menu-item filter-specialty">
+            <div class="col-lg-6 menu-item filter-coffee">
                 <div class="menu-content">
-                <a href="#">Bread barrel</a><span>$6.95</span>
+                <a href="#menu">Macchiato</a><span>$</span>
                 </div>
                 <div class="menu-ingredients">
-                Lorem, deren, trataro, filede, nerada
+                Double Espresso marked with milk
                 </div>
             </div>
-            <div class="col-lg-6 menu-item filter-starters">
+            <div class="col-lg-6 menu-item filter-coffee">
                 <div class="menu-content">
-                <a href="#">Crab Cake</a><span>$7.95</span>
+                <a href="#menu">Cortado</a><span>$</span>
                 </div>
                 <div class="menu-ingredients">
-                A delicate crab cake served on a toasted roll with lettuce and tartar sauce
+                60ml of milk* + double espresso
                 </div>
             </div>
-            <div class="col-lg-6 menu-item filter-salads">
+            <div class="col-lg-6 menu-item filter-coffee">
                 <div class="menu-content">
-                <a href="#">Caesar Selections</a><span>$8.95</span>
+                <a href="#menu">Flat White</a><span>$</span>
                 </div>
                 <div class="menu-ingredients">
-                Lorem, deren, trataro, filede, nerada
+                100ml of milk* + double espresso
                 </div>
             </div>
-            <div class="col-lg-6 menu-item filter-specialty">
+            <div class="col-lg-6 menu-item filter-coffee">
                 <div class="menu-content">
-                <a href="#">Tuscan Grilled</a><span>$9.95</span>
+                <a href="#menu">Cappucino</a><span>$</span>
                 </div>
                 <div class="menu-ingredients">
-                Grilled chicken with provolone, artichoke hearts, and roasted red pesto
+                125ml of milk* + single espresso & single espresso on the side
                 </div>
             </div>
-            <div class="col-lg-6 menu-item filter-starters">
+            <div class="col-lg-6 menu-item filter-coffee">
                 <div class="menu-content">
-                <a href="#">Mozzarella Stick</a><span>$4.95</span>
+                <a href="#menu">Latte</a><span>$</span>
                 </div>
                 <div class="menu-ingredients">
-                Lorem, deren, trataro, filede, nerada
+                175 of milk* + single espresso & single espresso on the side
                 </div>
             </div>
-            <div class="col-lg-6 menu-item filter-salads">
+            <div class="col-lg-6 menu-item filter-coffee">
                 <div class="menu-content">
-                <a href="#">Greek Salad</a><span>$9.95</span>
+                <a href="#menu">Caramel Latte</a><span>$</span>
                 </div>
                 <div class="menu-ingredients">
-                Fresh spinach, crisp romaine, tomatoes, and Greek olives
+                175ml of milk* + single espresso & single espresso on the side
                 </div>
             </div>
-            <div class="col-lg-6 menu-item filter-salads">
+            <div class="col-lg-6 menu-item filter-coffee">
                 <div class="menu-content">
-                <a href="#">Spinach Salad</a><span>$9.95</span>
+                <a href="#menu">Vanilla Latte</a><span>$</span>
                 </div>
                 <div class="menu-ingredients">
-                Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
+                175ml of milk* + single espresso & single espresso on the side
                 </div>
             </div>
-            <div class="col-lg-6 menu-item filter-specialty">
+            <div class="col-lg-6 menu-item filter-coffee">
                 <div class="menu-content">
-                <a href="#">Lobster Roll</a><span>$12.95</span>
+                <a href="#menu">Mocha</a><span>$</span>
                 </div>
                 <div class="menu-ingredients">
-                Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
+                Dark or white chocolate + 175ml of milk*
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-coffee">
+                <div class="menu-content">
+                <a href="#menu">Boozy Special</a><span>$</span>
+                </div>
+                <div class="menu-ingredients">
+                Dark Mocha with Cointreau - 125ml of milk
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-coffee">
+                <div class="menu-content">
+                <a href="#menu">Black Tonic</a><span>$</span>
+                </div>
+                <div class="menu-ingredients">
+                Double espresso served over Fever Tree Tonic & Ice 
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-coffee">
+                <div class="menu-content">
+                <a href="#menu">Iced Coffee</a><span>$</span>
+                </div>
+                <div class="menu-ingredients">
+                Espresso over ice
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-coffee">
+                <div class="menu-content">
+                <a href="#menu">Filter Coffee</a><span>$</span>
+                </div>
+                <div class="menu-ingredients">
+                Changes weekly depending on the season - check inside cafe
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-hc">
+                <div class="menu-content">
+                <a href="#menu">Dark Hot Chocolate</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-hc">
+                <div class="menu-content">
+                <a href="#menu">White Hot Chocolate</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-hc">
+                <div class="menu-content">
+                <a href="#menu">Venezuelan Black Hot Chocolate with Duchy Organic Unhomogenised milk</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-hc">
+                <div class="menu-content">
+                <a href="#menu">Alcoholic Coffee</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-tea">
+                <div class="menu-content">
+                <a href="#menu">Breakfast</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-tea">
+                <div class="menu-content">
+                <a href="#menu">Green</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-tea">
+                <div class="menu-content">
+                <a href="#menu">Earl Grey</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-tea">
+                <div class="menu-content">
+                <a href="#menu">Blood Orange</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-tea">
+                <div class="menu-content">
+                <a href="#menu">Peppermint</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-tea">
+                <div class="menu-content">
+                <a href="#menu">Jasmine</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-tea">
+                <div class="menu-content">
+                <a href="#menu">Super Jasmine Dragon Phoenix Pearls</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-tea">
+                <div class="menu-content">
+                <a href="#menu">Moroccan Fresh Mint Tea</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-cake">
+                <div class="menu-content">
+                <a href="#menu">Coffee & Walnut Cake</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-cake">
+                <div class="menu-content">
+                <a href="#menu">Coffee & Walnut Cake</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-cake">
+                <div class="menu-content">
+                <a href="#menu">Red Velvet Cake</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-cake">
+                <div class="menu-content">
+                <a href="#menu">Rockslide Brownie</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-cake">
+                <div class="menu-content">
+                <a href="#menu">Macaroons</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-cake">
+                <div class="menu-content">
+                <a href="#menu">Milk Chocolate Cookie</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-cake">
+                <div class="menu-content">
+                <a href="#menu">Blueberry Tulip Muffin</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-cake">
+                <div class="menu-content">
+                <a href="#menu">Raspberry Almond Frangipane</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-cake">
+                <div class="menu-content">
+                <a href="#menu">Chocolate & Coconut Flapjack</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                <a href="#menu">Chicken & Bacon Mayo</a><span>$</span>
+                </div>
+                <div class="menu-ingredients">
+                On a Barra Gallega Media Spanish Pilgrim bread
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                <a href="#menu">Tuna & Mayo with Cucumber</a><span>$</span>
+                </div>
+                <div class="menu-ingredients">
+                On a Barra Gallega Media Spanish Pilgrim bread
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                <a href="#menu">Coronation Chicken</a><span>$</span>
+                </div>
+                <div class="menu-ingredients">
+                On a Barra Gallega Media Spanish Pilgrim bread
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                <a href="#menu">French Brie & Cherry Tomatoes</a><span>$</span>
+                </div>
+                <div class="menu-ingredients">
+                On a Barra Gallega Media Spanish Pilgrim bread
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                <a href="#menu">French Brie & Prosciuto Crudo</a><span>$</span>
+                </div>
+                <div class="menu-ingredients">
+                On a Barra Gallega Media Spanish Pilgrim bread
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                <a href="#menu">Brie and Cranberry Toasted Panini</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                <a href="#menu">Prosciuto Crudo and French Brie Toasted Panini</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-sandwich">
+                <div class="menu-content">
+                <a href="#menu">Chorizo and Lincolnshire Cotehill Blue Cheese Toasted Panini</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-snacks">
+                <div class="menu-content">
+                <a href="#menu">Salty Dog Crisps</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-snacks">
+                <div class="menu-content">
+                <a href="#menu">Salty Dog Nuts</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-soft">
+                <div class="menu-content">
+                <a href="#menu">Fresh Orange Juice</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-soft">
+                <div class="menu-content">
+                <a href="#menu">Hildon Still Mineral Water</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-soft">
+                <div class="menu-content">
+                <a href="#menu">San Pellegrino Sparkling Natural Mineral Water 250ml</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-soft">
+                <div class="menu-content">
+                <a href="#menu">San Pellegrino Aranciata</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-soft">
+                <div class="menu-content">
+                <a href="#menu">San Pellegrino Sparkling Grapefruit</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-soft">
+                <div class="menu-content">
+                <a href="#menu">San Pellegrino Blood Orange</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-soft">
+                <div class="menu-content">
+                <a href="#menu">San Pellegrino Limonata</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-soft">
+                <div class="menu-content">
+                <a href="#menu">Fentimans Ginger Beer</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-soft">
+                <div class="menu-content">
+                <a href="#menu">Fentimans Curisity Cola</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-soft">
+                <div class="menu-content">
+                <a href="#menu">Fentimans Wild English Elderflower</a><span>$</span>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-item filter-soft">
+                <div class="menu-content">
+                <a href="#menu">Fresh Fruit Smoothies</a><span>$</span>
                 </div>
             </div>
         </div>
@@ -340,10 +591,32 @@
         <div class="row no-gutters">
             <div class="col-lg-3 col-md-4">
                 <div class="gallery-item">
-                <a href="{{ asset('img/testimonials-bg.jpg') }}" class="venobox" data-gall="gallery-item">
-                <img src="{{ asset('img/testimonials-bg.jpg') }}" alt="" class="img-fluid">
-                </a>
+                    <a href="http://coffeearoma.co.uk/images/coffearoma_filtercoffee.jpg" class="venobox" data-gall="gallery-item">
+                        <img src="http://coffeearoma.co.uk/images/coffearoma_filtercoffee.jpg" alt="" class="img-fluid">
+                    </a>
                 </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <div class="gallery-item">
+                    <a href="http://coffeearoma.co.uk/images/coffee-aroma-main-bar.jpg" class="venobox" data-gall="gallery-item">
+                        <img src="http://coffeearoma.co.uk/images/coffee-aroma-main-bar.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <div class="gallery-item">
+                    <a href="http://coffeearoma.co.uk/images/coffearoma_epressodrinks.jpg" class="venobox" data-gall="gallery-item">
+                        <img src="http://coffeearoma.co.uk/images/coffearoma_epressodrinks.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <div class="gallery-item">
+                    <a href="http://coffeearoma.co.uk/images/coffearoma_cake.jpg" class="venobox" data-gall="gallery-item">
+                        <img src="http://coffeearoma.co.uk/images/coffearoma_cake.jpg" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
             </div>
         </div>
     </div>

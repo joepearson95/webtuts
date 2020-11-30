@@ -14,11 +14,11 @@ body {
 }
 
 a {
-  color: #ffb03b;
+  color: #d2691e;
 }
 
 a:hover {
-  color: #ffc56e;
+  color: #d2691e;
   text-decoration: none;
 }
 
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  background: #ffb03b;
+  background: #d2691e;
   color: #fff;
   transition: all 0.4s;
 }
@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #topbar i {
-  color: #ffb03b;
+  color: #d2691e;
 }
 
 #topbar i + i {
@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 10px 0;
-  background: rgba(26, 24, 22, 0.85);
+  background: #000000;
 }
 
 #header.header-transparent {
@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header.header-scrolled {
   top: 0;
-  background: rgba(26, 24, 22, 0.85);
+  background: #000000;
 }
 
 #header .logo h1 {
@@ -158,12 +158,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #ffb03b;
+  color: #d2691e;
   text-decoration: none;
 }
 
 .nav-menu .check-table a {
-  background: #ffb03b;
+  background: #d2691e;
   color: #fff;
   border-radius: 50px;
   margin: 0 0 0 20px;
@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #ffb03b;
+  color: #d2691e;
 }
 
 .nav-menu .drop-down > a:after {
@@ -309,12 +309,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #ffb03b;
+  color: #d2691e;
   text-decoration: none;
 }
 
 .mobile-nav .check-table a {
-  background: #ffb03b;
+  background: #d2691e;
   color: #fff;
   border-radius: 50px;
   margin: 0 0 0 20px;
@@ -404,7 +404,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .carousel-item::before {
   content: '';
-  background-color: rgba(12, 11, 10, 0.5);
+  background-color: #000000;
   position: absolute;
   top: 0;
   right: 0;
@@ -435,7 +435,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h2 span {
-  color: #ffb03b;
+  color: #d2691e;
 }
 
 #hero p {
@@ -513,11 +513,11 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   color: #fff;
-  border: 2px solid #ffb03b;
+  border: 2px solid #d2691e;
 }
 
 #hero .btn-menu:hover, #hero .btn-book:hover {
-  background: #ffb03b;
+  background: #d2691e;
   color: #fff;
 }
 
@@ -560,7 +560,7 @@ section {
 }
 
 .section-title h2 span {
-  color: #ffb03b;
+  color: #d2691e;
 }
 
 .section-title p {
@@ -678,7 +678,7 @@ section {
 
 .about .content ul i {
   font-size: 20px;
-  color: #ffb03b;
+  color: #d2691e;
   position: absolute;
   left: 0;
   top: 2px;
@@ -699,7 +699,7 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#ffb03b 50%, rgba(255, 176, 59, 0.4) 52%);
+  background: radial-gradient(#d2691e 50%, rgba(255, 176, 59, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -747,7 +747,7 @@ section {
 }
 
 .about .play-btn:hover::after {
-  border-left: 15px solid #ffb03b;
+  border-left: 15px solid #d2691e;
   transform: scale(20);
 }
 
@@ -839,7 +839,7 @@ section {
 }
 
 .why-us .box:hover {
-  background: #ffb03b;
+  background: #d2691e;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
@@ -870,13 +870,13 @@ section {
   margin: 0 3px 10px 3px;
   transition: all ease-in-out 0.3s;
   background: #fff;
-  border: 2px solid #ffb03b;
+  border: 2px solid #d2691e;
   border-radius: 50px;
 }
 
 .menu #menu-flters li:hover, .menu #menu-flters li.filter-active {
   color: #fff;
-  background: #ffb03b;
+  background: #d2691e;
 }
 
 .menu #menu-flters li:last-child {
@@ -910,7 +910,7 @@ section {
   position: relative;
   z-index: 3;
   font-weight: 700;
-  color: #ff9b08;
+  color: #d2691e;
 }
 
 .menu .menu-content span {
@@ -973,7 +973,7 @@ section {
 .events .event-item h3 {
   font-weight: 600;
   font-size: 26px;
-  color: #ffb03b;
+  color: #d2691e;
 }
 
 .events .event-item .price {
@@ -984,7 +984,7 @@ section {
 }
 
 .events .event-item .price span {
-  border-bottom: 2px solid #ffb03b;
+  border-bottom: 2px solid #d2691e;
 }
 
 .events .event-item ul {
@@ -999,7 +999,7 @@ section {
 .events .event-item ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #ffb03b;
+  color: #d2691e;
 }
 
 .events .event-item p:last-child {
@@ -1021,7 +1021,7 @@ section {
 }
 
 .events .owl-dot.active {
-  background-color: #ffb03b !important;
+  background-color: #d2691e !important;
 }
 
 @media (min-width: 992px) {
@@ -1109,7 +1109,7 @@ section {
 }
 
 .check-table .php-email-form button[type="submit"] {
-  background: #ffb03b;
+  background: #d2691e;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1156,7 +1156,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #ffb03b;
+  color: #d2691e;
   float: left;
   width: 44px;
   height: 44px;
@@ -1185,7 +1185,7 @@ section {
 }
 
 .contact .info:hover i {
-  background: #ffb03b;
+  background: #d2691e;
   color: #fff;
 }
 
@@ -1261,7 +1261,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #ffb03b;
+  background: #d2691e;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1295,7 +1295,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #35322d;
+  background: #000000;
   color: #fff;
   font-size: 14px;
   text-align: center;
@@ -1305,7 +1305,7 @@ section {
 #footer h3 {
   font-size: 36px;
   font-weight: 700;
-  color: #ffb03b;
+  color: #d2691e;
   position: relative;
   padding: 0;
   margin: 0 0 15px 0;
@@ -1325,7 +1325,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #46423b;
+  background: #292929;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1338,7 +1338,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #ffb03b;
+  background: #d2691e;
 }
 
 #footer .copyright {
