@@ -8,9 +8,11 @@ use App\Models\Message;
 class HomeController extends Controller
 {
     public function index() {
-        $messages = Message::all();
-        return view('home', [
-            'messages' => $messages
-        ]);
+        return view('home');
+        // Example
+        // $messages = Message::all();
+        // return view('home', [
+        //     'messages' => $messages
+        // ]);
     }
 }
