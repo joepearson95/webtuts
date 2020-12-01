@@ -17,7 +17,6 @@
       <link href="{{ asset('vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
       <link href="{{ asset('vendor/animate.css/animate.min.css')}}" rel="stylesheet">
       <link href="{{ asset('vendor/venobox/venobox.css')}}" rel="stylesheet">
-      <link href="{{ asset('vendor/owl.carousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
       <!-- Template Main CSS File -->
       <link href="{{ asset('css/style.css')}}" rel="stylesheet">
       <!-- =======================================================
@@ -39,7 +38,7 @@
       <header id="header" class="fixed-top d-flex align-items-center header-transparent">
          <div class="container d-flex align-items-center">
             <div class="logo mr-auto">
-               <h1 class="text-light"><a href="index.html"><span>Coffee Aroma</span></a></h1>
+               <h1 class="text-light"><a href="/"><span>Coffee Aroma</span></a></h1>
                <!-- Uncomment below if you prefer to use an image logo -->
                <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
             </div>
@@ -52,7 +51,22 @@
                   <li><a href="#check-table">Check Tables</a></li>
                   <li><a href="#gallery">Gallery</a></li>
                   <li><a href="#contact">Contact</a></li>                  
-                  <li class="check-table text-center"><a href="/account">Account</a></li>
+                  @guest
+                     <li class="check-table text-center"><a href="/account">Account</a></li>
+                  @else
+                     <li class="check-table text-center"><a href="/account">{{ Auth::user()->name }}</a></li>
+                     <li>
+                        <a class="check-table text-center" href="{{ route('logout') }}"
+                           onclick="event.preventDefault();
+                                       document.getElementById('logout-form').submit();">
+                           {{ __('Logout') }}
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                           @csrf
+                        </form>
+                     </li>
+                  @endguest
                </ul>
             </nav>
             <!-- .nav-menu -->
@@ -92,7 +106,6 @@
       <script src="{{ asset('vendor/jquery-sticky/jquery.sticky.js') }}"></script>
       <script src="{{ asset('vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
       <script src="{{ asset('vendor/venobox/venobox.min.js') }}"></script>
-      <script src="{{ asset('vendor/owl.carousel/owl.carousel.min.js') }}"></script>
       <!-- Template Main JS File -->
       <script src="{{ asset('js/main.js') }}"></script>
    </body>

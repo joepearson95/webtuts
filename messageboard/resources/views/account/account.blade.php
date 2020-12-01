@@ -4,7 +4,7 @@
 @section('hero')
 <section id="hero">
     <div class="hero-container">
-            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+            <ol class="carousel-indicators" id="hero-carousel-indicators"><a href="#why-us"><i class="icofont-arrow-down"></i></a></ol>
             <div class="carousel-inner" role="listbox">
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
@@ -27,19 +27,20 @@
             <p>Log in or register below</p>
         </div>
         <div class="row">
-            <div class="col-lg-6">
-                <div class="box">
-                <span>01</span>
-                <h4>The Sunday Times 2017</h4>
-                <p>" One of the top 25 Coffee Houses in the UK. "</p>
-                </div>
-            </div>
-            <div class="col-lg-6 mt-4 mt-lg-0">
-                <div class="box">
-                <span>02</span>
-                <h4>The Guardian Newspaper 2010</h4>
-                <p>" One of the best 10 coffee shops in the UK. "</p>
-                </div>
+            <div class="col-lg-12">
+                @guest
+                    <div class="box">
+                        <span>Login/Register</span>
+                        <a href="/login" class="btn btn-warning btn-block">Sign In</a>
+                        <a href="/register" class="btn btn-secondary btn-block">Register</a>
+                        <a href="/sign-in/github" class="btn btn-dark btn-block">Sign In with GitHub</a>
+                    </div>
+                @else
+                    <div class="box">
+                        <span>Hi {{ Auth::user()->name }}!</span>
+                        <p>More information coming soon...</p>
+                    </div>
+                @endguest
             </div>
         </div>
     </div>

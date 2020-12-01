@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\AccountController;
-
+use Laravel\Fortify\Fortify;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,6 +19,10 @@ use App\Http\Controllers\AccountController;
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/account', [AccountController::class, 'index']);
 
+# create middleware
+Route::get('/sign-in/github', [AccountController::class, 'github']);
+Route::get('/sign-in/github/redirect', [AccountController::class, 'githubRedirect']);
+Route::get('/home', [AccountController::class, 'index'])->middleware('auth');
 // Below is from the tutorial
 // Route::post('/create', [MessageController::class, 'create']);
 // Route::get('/message/{id}', [MessageController::class, 'view']);
