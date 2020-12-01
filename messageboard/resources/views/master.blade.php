@@ -7,8 +7,7 @@
       <meta content="We Are Coffee Fanatics Established in 2005, Coffee Aroma offers barista-championship standard coffee in Lincoln. Hosting the widest selection of single origin coffee, we offer only the highest quality products and our award-winning experience is demonstrated through the staff that we train. Contributing as a valued member of the world coffee community, we are proud to have worked with some of the most knowledgable people in the industry. We hope you can see and taste the reason why we have been voted one of the top 10 coffee shops in the UK, by The Guardian newspaper. Come and visit us to find a coffee that best suits you, we love to share good coffee." name="descriptison">
       <meta content="coffee, lincoln, aroma, uk, responsive, cafe" name="keywords">
       <!-- Favicons -->
-      <link href="assets/img/favicon.png" rel="icon">
-      <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+      <link href="#" rel="icon">
       <!-- Google Fonts -->
       <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
       <!-- Vendor CSS Files -->
@@ -19,6 +18,8 @@
       <link href="{{ asset('vendor/venobox/venobox.css')}}" rel="stylesheet">
       <!-- Template Main CSS File -->
       <link href="{{ asset('css/style.css')}}" rel="stylesheet">
+
+      <link href="{{ asset('css/profile.css') }}" rel="stylesheet">
       <!-- =======================================================
          * Template Name: Delicious - v2.1.0
          * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
