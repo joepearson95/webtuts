@@ -55,7 +55,7 @@
                                     <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                                     <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                                         <h6 class="mb-0"><i class="icofont-github"></i></h6>
-                                        <span class="text-secondary">#</span>
+                                        <span class="text-secondary"><a href="https://github.com/{{ Auth::user()->name }}">{{ Auth::user()->name }}</a></span>
                                     </li>
                                     <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                                         <h6 class="mb-0"><i class="icofont-clock-time"></i></h6>

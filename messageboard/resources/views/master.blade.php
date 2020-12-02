@@ -6,6 +6,7 @@
       <title>Coffee Aroma - @yield('title')</title>
       <meta content="We Are Coffee Fanatics Established in 2005, Coffee Aroma offers barista-championship standard coffee in Lincoln. Hosting the widest selection of single origin coffee, we offer only the highest quality products and our award-winning experience is demonstrated through the staff that we train. Contributing as a valued member of the world coffee community, we are proud to have worked with some of the most knowledgable people in the industry. We hope you can see and taste the reason why we have been voted one of the top 10 coffee shops in the UK, by The Guardian newspaper. Come and visit us to find a coffee that best suits you, we love to share good coffee." name="descriptison">
       <meta content="coffee, lincoln, aroma, uk, responsive, cafe" name="keywords">
+      <meta name="csrf-token" content="{{ csrf_token() }}">
       <!-- Favicons -->
       <link href="#" rel="icon">
       <!-- Google Fonts -->
@@ -44,20 +45,34 @@
                <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
             </div>
             <nav class="nav-menu d-none d-lg-block">
-               <ul>
+               <ul class="text-center">
                   <li class="active"><a href="/">Home</a></li>
                   <li><a href="#about">About</a></li>
                   <li><a href="#menu">Menu</a></li>
                   <li><a href="#events">Events</a></li>
                   <li><a href="#check-table">Check Tables</a></li>
                   <li><a href="#gallery">Gallery</a></li>
-                  <li><a href="#contact">Contact</a></li>                  
+                  <li><a href="#contact">Contact</a></li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <i class="icofont-shopping-cart"></i><span class="caret"></span></a>
+                     <ul class="dropdown-menu dropdown-cart" role="menu">
+                        <form id="postForm" name="postForm">
+                           <div id="items-in-cart">
+                           </div>
+                           <div id="cart-buttons">
+                              <li style="margin-top: 5px;">
+                                 <a class="btn btn-success btn-block" href="#" style="color:white;" onclick="checkoutCart()">Checkout</a>
+                              </li>
+                           </div>
+                        </form>
+                     </ul>
+                  </li> 
                   @guest
-                     <li class="check-table text-center"><a href="/account">Account</a></li>
+                     <li class="check-table"><a href="/account">Account</a></li>
                   @else
-                     <li class="check-table text-center"><a href="/account">{{ Auth::user()->name }}</a></li>
+                     <li class="check-table"><a href="/account">{{ Auth::user()->name }}</a></li>
                      <li>
-                        <a class="check-table text-center" href="{{ route('logout') }}"
+                        <a class="check-table" href="{{ route('logout') }}"
                            onclick="event.preventDefault();
                                        document.getElementById('logout-form').submit();">
                            {{ __('Logout') }}

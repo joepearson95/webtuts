@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\AccountController;
+use App\Http\Controllers\ShoppingController;
 use Laravel\Fortify\Fortify;
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,8 @@ use Laravel\Fortify\Fortify;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/account', [AccountController::class, 'index']);
+Route::get('/checkout', [ShoppingController::class, 'index']);
+Route::post('/sessionBasket', [ShoppingController::class, 'basketToSession']);
 
 # create middleware
 Route::get('/sign-in/github', [AccountController::class, 'github']);

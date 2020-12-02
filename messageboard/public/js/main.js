@@ -4,6 +4,66 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+/* Add to cart */
+$(document).ready(function (){
+  $.ajaxSetup({
+    headers: {
+      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+  });
+});
+
+function checkoutCart() {
+  // gets the id, nameand price from each item in basket.
+  var items = [];
+  $('#items-in-cart li').each(function(i, v){
+    items.push([
+      v.id,
+      v.children[0].children[0].children[0].children[0].innerText,
+      v.children[0].children[0].children[0].children[1].innerText
+    ])
+  });
+  $.ajax({
+    data: {item : items},
+    url: "/sessionBasket",
+    type: "POST",
+    success: function(data) {
+      console.log(data);
+    }
+  });
+}
+
+function addItemToCart() {
+  if ($('#items-in-cart').length > 0) {
+    var numItem = $('#items-in-cart').length + 1;
+  }
+  else {
+    var numItem = 1;
+  }
+  $( "#items-in-cart" ).append(`
+    <li id="item-` + numItem + `">
+      <span class="item">
+        <span class="item-left">
+            <span class="item-info">
+              <span id="item-name">Item name</span>
+              <span id="item-price">price: 7$</span>
+            </span>
+        </span>
+        <span class="item-right">
+            <button class="btn btn-danger" onclick="removeItem(this)"><i class="icofont-ui-remove"></i></button>
+        </span>
+      </span>
+    </li>
+    <hr/>
+  `);
+}
+
+function removeItem(clicked_id) {
+  $("#" + clicked_id.parentNode.parentNode.parentNode.id).remove()
+}
+
+/* TEMPLATE JS */
 !(function($) {
   "use strict";
 
@@ -179,22 +239,6 @@
         filter: $(this).data('filter')
       });
     });
-  });
-
-  // Testimonials carousel (uses the Owl Carousel library)
-  $(".events-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
-
-  // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
   });
 
   // Initiate venobox lightbox

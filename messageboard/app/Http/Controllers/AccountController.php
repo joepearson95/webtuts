@@ -20,14 +20,12 @@ class AccountController extends Controller
     }
     public function githubRedirect() {
         $user = Socialite::driver('github')->user();
-
         $user = User::firstOrCreate([
             'email' => $user->email
         ], [
-            'name' => $user->name,
+            'name' => $user->nickname,
             'password' => Hash::make(Str::random(24))
         ]);
-
         Auth::login($user, true);
         return redirect('/home');
     }
