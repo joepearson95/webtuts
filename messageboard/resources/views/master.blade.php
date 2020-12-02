@@ -58,6 +58,12 @@
                      <ul class="dropdown-menu dropdown-cart" role="menu">
                         <form id="postForm" name="postForm">
                            <div id="items-in-cart">
+                           <!--- logic works -->
+                              @foreach(Session::get('sessionBasket') as $basketItem)
+                                 @foreach($basketItem as $item)
+                                    {{ $item[1] }}
+                                 @endforeach
+                              @endforeach
                            </div>
                            <div id="cart-buttons">
                               <li style="margin-top: 5px;">

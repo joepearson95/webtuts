@@ -24,14 +24,15 @@ function checkoutCart() {
       v.children[0].children[0].children[0].children[1].innerText
     ])
   });
-  $.ajax({
-    data: {item : items},
-    url: "/sessionBasket",
-    type: "POST",
-    success: function(data) {
-      console.log(data);
-    }
-  });
+  console.log(items)
+  // $.ajax({
+  //   data: {item : items},
+  //   url: "/sessionBasket",
+  //   type: "POST",
+  //   success: function(data) {
+  //     window.location=data.url;
+  //   }
+  // });
 }
 
 function addItemToCart() {
