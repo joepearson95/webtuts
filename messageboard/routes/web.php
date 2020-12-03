@@ -20,6 +20,7 @@ use Laravel\Fortify\Fortify;
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/account', [AccountController::class, 'index']);
 Route::get('/checkout', [ShoppingController::class, 'index']);
+Route::get('/checkout/payment', [ShoppingController::class, 'payment']);
 Route::post('/sessionBasket', [ShoppingController::class, 'basketToSession']);
 Route::post('/resetSessionBasket', [ShoppingController::class, 'resetBasketToSession']);
 

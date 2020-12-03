@@ -47,7 +47,7 @@
                                 </div>
                             </div>
                             @endforeach
-                    @endforeach
+                        @endforeach
                     @else
                         <div class="col-lg-12 menu-item">
                             <div class="text-center">
@@ -56,6 +56,15 @@
                         </div>
                     @endif
                 @endif
+            </div>
+            <div class="row justify-content-md-center" style="margin-top:5px;">
+                <div class="col-lg-6">
+                    @if(session()->has('sessionBasket'))
+                        @if(Session::get('sessionBasket'))
+                            <a class="btn btn-success btn-block btn-small" href="/checkout/payment" style="color:white;">Checkout</a>
+                        @endif
+                    @endif
+                </div>
             </div>
         </div>
     </section>

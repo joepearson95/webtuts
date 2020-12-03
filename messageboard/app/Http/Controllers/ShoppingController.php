@@ -11,6 +11,15 @@ class ShoppingController extends Controller
         return view('shopping/index');
     }
 
+    public function payment() {
+        // if not coming from checkout page, redirect
+        if ( !request()->is('/checkout/payment') && url()->previous() !=  url('/checkout') ) {
+            return redirect()->to('/');
+        }
+
+        
+    }
+
     public function basketToSession(Request $request) {
         # If the call is not AJAX, throw 404.
         $items = $request->all();
