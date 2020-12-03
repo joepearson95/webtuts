@@ -58,16 +58,30 @@
                      <ul class="dropdown-menu dropdown-cart" role="menu">
                         <form id="postForm" name="postForm">
                            <div id="items-in-cart">
-                           <!--- logic works -->
-                              @foreach(Session::get('sessionBasket') as $basketItem)
+                           @if(session()->has('sessionBasket'))
+                              @foreach(Session::get('sessionBasket') as $basketItem) 
                                  @foreach($basketItem as $item)
-                                    {{ $item[1] }}
+                                    <li id="item-{{ $item[0] }}">
+                                       <span class="item">
+                                       <span class="item-left">
+                                             <span class="item-info">
+                                             <span id="item-name">{{ $item[1] }}</span>
+                                             <span id="item-price">{{ $item[2] }}</span>
+                                             </span>
+                                       </span>
+                                       <span class="item-right">
+                                          <button class="btn btn-danger" onclick="removeItem(this)"><i class="icofont-ui-remove"></i></button>
+                                       </span>
+                                       </span>
+                                    </li>
+                                 <hr/> 
                                  @endforeach
                               @endforeach
+                           @endif
                            </div>
                            <div id="cart-buttons">
                               <li style="margin-top: 5px;">
-                                 <a class="btn btn-success btn-block" href="#" style="color:white;" onclick="checkoutCart()">Checkout</a>
+                                 <a class="btn btn-success btn-block" href="/checkout" style="color:white;">Checkout</a>
                               </li>
                            </div>
                         </form>

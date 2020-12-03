@@ -21,6 +21,7 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/account', [AccountController::class, 'index']);
 Route::get('/checkout', [ShoppingController::class, 'index']);
 Route::post('/sessionBasket', [ShoppingController::class, 'basketToSession']);
+Route::post('/resetSessionBasket', [ShoppingController::class, 'resetBasketToSession']);
 
 # create middleware
 Route::get('/sign-in/github', [AccountController::class, 'github']);

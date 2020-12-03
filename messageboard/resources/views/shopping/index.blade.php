@@ -22,26 +22,40 @@
 @section('content')
     <section id="menu" class="menu">
         <div class="container">
-            <div class="section-title">
-                <h2>Your <span>basket</span> is below</h2>
-            </div>
+            @if(session()->has('sessionBasket'))
+                @if(Session::get('sessionBasket'))
+                    <div class="section-title">
+                        <h2>Your <span>basket</span> is below</h2>
+                    </div>
+                @else
+                    <div class="section-title">
+                        <h2>Your <span>basket</span> is empty</h2>
+                    </div>
+                @endif
+            @endif
             <div class="row menu-container">
-                <div class="col-lg-6 menu-item filter-coffee">
-                    <div class="menu-content">
-                    <a href="#menu">Double Espresso</a><span class="btn btn-primary" onclick="addItemToCart()"><i class="icofont-ui-add"></i></span>
-                    </div>
-                    <div class="menu-ingredients">
-                    60ml served with sparkling water
-                    </div>
-                </div>
-                <div class="col-lg-6 menu-item filter-coffee">
-                    <div class="menu-content">
-                    <a href="#menu">Macchiato</a><span>$</span>
-                    </div>
-                    <div class="menu-ingredients">
-                    Double Espresso marked with milk
-                    </div>
-                </div>
+                @if(session()->has('sessionBasket'))
+                    @if(Session::get('sessionBasket'))
+                        @foreach(Session::get('sessionBasket') as $basketItem) 
+                            @foreach($basketItem as $item)
+                            <div class="col-lg-6 menu-item basketItemsNumbered" id="item-{{ $item[0] }}">
+                                <div class="menu-content">
+                                    <a href="#menu">{{ $item[1] }}</a><span class="btn btn-primary" style="background-color:#df4759 !important;" onclick="removeCheckoutItem(this)"><i class="icofont-ui-remove"></i></span>
+                                </div>
+                                <div class="menu-ingredients">
+                                    {{ $item[2] }}
+                                </div>
+                            </div>
+                            @endforeach
+                    @endforeach
+                    @else
+                        <div class="col-lg-12 menu-item">
+                            <div class="text-center">
+                                <p>Go <a href="/" style="text-decoration:underline">home</a> to add items!</p>
+                            </div>
+                        </div>
+                    @endif
+                @endif
             </div>
         </div>
     </section>

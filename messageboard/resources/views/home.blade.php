@@ -119,7 +119,7 @@
         <div class="row menu-container">
             <div class="col-lg-6 menu-item filter-coffee">
                 <div class="menu-content">
-                <a href="#menu">Double Espresso</a><span class="btn btn-primary" onclick="addItemToCart()"><i class="icofont-ui-add"></i></span>
+                <a href="#menu">Double Espresso</a><span class="btn btn-primary" onclick="addItemToCart(this)"><i class="icofont-ui-add"></i></span>
                 </div>
                 <div class="menu-ingredients">
                 60ml served with sparkling water

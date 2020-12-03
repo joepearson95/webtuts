@@ -14,54 +14,86 @@ $(document).ready(function (){
   });
 });
 
-function checkoutCart() {
-  // gets the id, nameand price from each item in basket.
-  var items = [];
-  $('#items-in-cart li').each(function(i, v){
+var items = [];
+var numItem = 0;
+function addItemToCart(clicked_item) {
+  if (numItem < $('.nav-menu .text-center .dropdown .dropdown-menu #postForm #items-in-cart li').length) {
+    numItem += 1;
+  } 
+  if(!items.length) {
+    $('.nav-menu .text-center .dropdown .dropdown-menu #postForm #items-in-cart li').each(function(i, v){
+      items.push([
+        v.id,
+        v.children[0].children[0].children[0].children[0].innerText,
+        v.children[0].children[0].children[0].children[1].innerText
+      ])
+    });
+
     items.push([
-      v.id,
-      v.children[0].children[0].children[0].children[0].innerText,
-      v.children[0].children[0].children[0].children[1].innerText
-    ])
+      "item-" + numItem,
+      clicked_item.parentNode.children[0].innerText,
+      '£1.00'
+    ]);
+  } else {
+    items.push([
+      "item-" + numItem,
+      clicked_item.parentNode.children[0].innerText,
+      '£1.00'
+    ]);
+  }
+  
+  $.ajax({
+    data: {item : items},
+    url: "/sessionBasket",
+    type: "POST",
+    success: function(data) {
+      window.location=data.url;
+    }
   });
-  console.log(items)
-  // $.ajax({
-  //   data: {item : items},
-  //   url: "/sessionBasket",
-  //   type: "POST",
-  //   success: function(data) {
-  //     window.location=data.url;
-  //   }
-  // });
 }
 
-function addItemToCart() {
-  if ($('#items-in-cart').length > 0) {
-    var numItem = $('#items-in-cart').length + 1;
+function removeCheckoutItem(checkoutItem) {
+  checkoutItem.parentNode.parentNode.remove();
+  newItems = [];
+  if(!newItems.length) {
+    $('#menu .container .menu-container .basketItemsNumbered').each(function(i, v){
+      newItems.push([
+        v.id,
+        v.children[0].children[0].innerText,
+        v.children[1].innerText
+      ])
+    });
   }
-  else {
-    var numItem = 1;
-  }
-  $( "#items-in-cart" ).append(`
-    <li id="item-` + numItem + `">
-      <span class="item">
-        <span class="item-left">
-            <span class="item-info">
-              <span id="item-name">Item name</span>
-              <span id="item-price">price: 7$</span>
-            </span>
-        </span>
-        <span class="item-right">
-            <button class="btn btn-danger" onclick="removeItem(this)"><i class="icofont-ui-remove"></i></button>
-        </span>
-      </span>
-    </li>
-    <hr/>
-  `);
+  $.ajax({
+    data: {newItem : newItems},
+    url: "/resetSessionBasket",
+    type: "POST",
+    success: function(data) {
+      location.reload();
+    }
+  });
 }
 
 function removeItem(clicked_id) {
   $("#" + clicked_id.parentNode.parentNode.parentNode.id).remove()
+  newItems = [];
+  if(!newItems.length) {
+    $('.nav-menu .text-center .dropdown .dropdown-menu #postForm #items-in-cart li').each(function(i, v){
+      newItems.push([
+        v.id,
+        v.children[0].children[0].children[0].children[0].innerText,
+        v.children[0].children[0].children[0].children[1].innerText
+      ])
+    });
+  }
+  $.ajax({
+    data: {newItem : newItems},
+    url: "/resetSessionBasket",
+    type: "POST",
+    success: function(data) {
+      location.reload();
+    }
+  });
 }
 
 /* TEMPLATE JS */

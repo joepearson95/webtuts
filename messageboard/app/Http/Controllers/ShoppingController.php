@@ -12,14 +12,22 @@ class ShoppingController extends Controller
     }
 
     public function basketToSession(Request $request) {
-        # If the call is not AJAX, throw 404. If the request is also empty, don't add to session.
+        # If the call is not AJAX, throw 404.
         $items = $request->all();
         if(!request()->ajax()) {
             abort(404, 'Page not found');
         }
-        if (!empty($items)) {
-            Session::put(['sessionBasket' => $items]);
-            return response()->json(['url'=>url('/checkout')]);;
+        Session::put(['sessionBasket' => $items]);
+        return response()->json(['url'=>url('/')]);
+    }
+
+    public function resetBasketToSession(Request $request) {
+        # If the call is not AJAX, throw 404.
+        $items = $request->all();
+        if(!request()->ajax()) {
+            abort(404, 'Page not found');
         }
+        Session::put(['sessionBasket' => $items]);
+        return "deleted successfull";
     }
 }
