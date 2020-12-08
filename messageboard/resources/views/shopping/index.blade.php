@@ -4,7 +4,7 @@
 @section('hero')
 <section id="hero">
     <div class="hero-container">
-        <ol class="carousel-indicators" id="hero-carousel-indicators"><a href="#why-us"><i class="icofont-arrow-down"></i></a></ol>
+        <ol class="carousel-indicators" id="hero-carousel-indicators"><a href="#scroll-down"><i class="icofont-arrow-down"></i></a></ol>
         <div class="carousel-inner" role="listbox">
             <!-- Slide 1 -->
             <div class="carousel-item active">
@@ -20,7 +20,7 @@
 @endsection
 
 @section('content')
-    <section id="menu" class="menu">
+    <section id="scroll-down" class="scroll-down">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 order-md-2 mb-4">

@@ -12,6 +12,14 @@ $(document).ready(function (){
       'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
     }
   });
+
+  var cur_url = window.location.href;
+  if(window.location.pathname == "/") {
+    console.log("homepage")
+  } else {
+    $(".dropdown").empty();
+    $(".dropdown").append("<li><a href='#scroll-down'><i class='icofont-arrow-down'></i></a></li>");
+  }
 });
 
 var items = [];
