@@ -17,7 +17,7 @@ class ShoppingController extends Controller
             return redirect()->to('/');
         }
 
-        
+                
     }
 
     public function basketToSession(Request $request) {
@@ -27,7 +27,7 @@ class ShoppingController extends Controller
             abort(404, 'Page not found');
         }
         Session::put(['sessionBasket' => $items]);
-        return response()->json(['url'=>url('/')]);
+        return "success";
     }
 
     public function resetBasketToSession(Request $request) {

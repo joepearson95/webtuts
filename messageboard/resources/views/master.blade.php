@@ -144,5 +144,7 @@
       <script src="{{ asset('vendor/venobox/venobox.min.js') }}"></script>
       <!-- Template Main JS File -->
       <script src="{{ asset('js/main.js') }}"></script>
+
+      @yield('custom_js')
    </body>
 </html>

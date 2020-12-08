@@ -47,7 +47,7 @@ function addItemToCart(clicked_item) {
     url: "/sessionBasket",
     type: "POST",
     success: function(data) {
-      window.location=data.url;
+      $('#items-in-cart').load(location.href + " #items-in-cart");
     }
   });
 }
@@ -69,7 +69,7 @@ function removeCheckoutItem(checkoutItem) {
     url: "/resetSessionBasket",
     type: "POST",
     success: function(data) {
-      location.reload();
+      $('#items-in-cart').load(location.href + " #items-in-cart");
     }
   });
 }
@@ -91,7 +91,7 @@ function removeItem(clicked_id) {
     url: "/resetSessionBasket",
     type: "POST",
     success: function(data) {
-      location.reload();
+      $('#items-in-cart').load(location.href + " #items-in-cart");
     }
   });
 }

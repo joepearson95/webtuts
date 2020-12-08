@@ -18,6 +18,7 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'account_type',
         'email',
         'password',
     ];
@@ -39,5 +40,14 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+    ];
+
+    /**
+    * The attributes that have a default value.
+    *
+    * @var array
+    **/
+    protected $attributes = [
+        'account_type' => 'standard',
     ];
 }

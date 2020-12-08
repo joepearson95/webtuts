@@ -15,6 +15,9 @@ class CreateStockTable extends Migration
     {
         Schema::create('stock', function (Blueprint $table) {
             $table->id();
+            $table->string('item_name');
+            $table->string('item_description');
+            $table->decimal('item_price', 5, 2); // the digits has been set to 5, just in case
             $table->timestamps();
         });
     }
